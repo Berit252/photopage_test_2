@@ -9,7 +9,7 @@ if (gallery01Images) {
         image.onclick = () => {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
-            let getImgUrlPos = getFullImgUrl.split('/img/pack1/small_size/')
+            let getImgUrlPos = getFullImgUrl.split('url("https://berit252.github.io/photopage_test_2/img/pack1/small_size/')
             alert(getImgUrlPos)
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
@@ -22,7 +22,7 @@ if (gallery01Images) {
 
             let newImg = document.createElement('img')
             newImgWindow.appendChild(newImg)
-            newImg.setAttribute('src', '../img/pack1/' + setNewImgUrl)
+            newImg.setAttribute('src', 'https://berit252.github.io/photopage_test_2/img/pack1/' + setNewImgUrl)
             newImg.setAttribute('id', 'current-img')
             
             newImg.onload = () => {
