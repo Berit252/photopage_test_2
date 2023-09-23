@@ -24,7 +24,7 @@ function changeImg01(changeId) {
         }
     }
 
-    newImg.setAttribute('src', `../img/pack1/${calcNewImg}.jpg`)
+    newImg.setAttribute('src', `"https://berit252.github.io/photopage_test_2/img/pack1/${calcNewImg}.jpg`)
     newImg.setAttribute('id', 'current-img')
 
     getLatestOpenedImg = calcNewImg
@@ -50,7 +50,7 @@ function changeImg02(changeId) {
         }
     }
 
-    newImg.setAttribute('src', `../img/pack2/${calcNewImg}.jpg`)
+    newImg.setAttribute('src', `https://berit252.github.io/photopage_test_2/img/pack2/${calcNewImg}.jpg`)
     newImg.setAttribute('id', 'current-img')
 
     getLatestOpenedImg = calcNewImg
@@ -76,7 +76,7 @@ function changeImg03(changeId) {
         }
     }
 
-    newImg.setAttribute('src', `../img/pack3/${calcNewImg}.jpg`)
+    newImg.setAttribute('src', `"https://berit252.github.io/photopage_test_2/img/pack3/${calcNewImg}.jpg`)
     newImg.setAttribute('id', 'current-img')
 
     getLatestOpenedImg = calcNewImg
