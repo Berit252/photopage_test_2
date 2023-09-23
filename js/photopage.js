@@ -52,7 +52,7 @@ if (gallery02Images) {
         image.onclick = () => {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
-            let getImgUrlPos = getFullImgUrl.split('/img/pack2/small_size/')
+            let getImgUrlPos = getFullImgUrl.split('url("https://berit252.github.io/photopage_test_2/img/pack2/small_size/')
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
             getLatestOpenedImg = index + 1
@@ -64,7 +64,7 @@ if (gallery02Images) {
 
             let newImg = document.createElement('img')
             newImgWindow.appendChild(newImg)
-            newImg.setAttribute('src', '../img/pack2/' + setNewImgUrl)
+            newImg.setAttribute('src', 'https://berit252.github.io/photopage_test_2/img/pack2/' + setNewImgUrl)
             newImg.setAttribute('id', 'current-img')
             
             newImg.onload = () => {
@@ -94,7 +94,7 @@ if (gallery03Images) {
         image.onclick = () => {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
-            let getImgUrlPos = getFullImgUrl.split('/img/pack3/small_size/')
+            let getImgUrlPos = getFullImgUrl.split('url("https://berit252.github.io/photopage_test_2/img/pack3/small_size/')
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
             getLatestOpenedImg = index + 1
@@ -106,7 +106,7 @@ if (gallery03Images) {
 
             let newImg = document.createElement('img')
             newImgWindow.appendChild(newImg)
-            newImg.setAttribute('src', '../img/pack3/' + setNewImgUrl)
+            newImg.setAttribute('src', 'https://berit252.github.io/photopage_test_2/img/pack3/' + setNewImgUrl)
             newImg.setAttribute('id', 'current-img')
             
             newImg.onload = () => {
