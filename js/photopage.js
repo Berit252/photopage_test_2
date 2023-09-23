@@ -10,6 +10,7 @@ if (gallery01Images) {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
             let getImgUrlPos = getFullImgUrl.split('/img/pack1/small_size/')
+            alert(getImgUrlPos)
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
             getLatestOpenedImg = index + 1
