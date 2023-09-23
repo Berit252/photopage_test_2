@@ -9,8 +9,7 @@ if (gallery01Images) {
         image.onclick = () => {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
-            let getImgUrlPos = getFullImgUrl.split('/img/pack1/smallSize/')
-            alert(getImgUrlPos)
+            let getImgUrlPos = getFullImgUrl.split('/img/pack1/small_size/')
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
             getLatestOpenedImg = index + 1
@@ -52,7 +51,7 @@ if (gallery02Images) {
         image.onclick = () => {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
-            let getImgUrlPos = getFullImgUrl.split('/img/pack2/smallSize/')
+            let getImgUrlPos = getFullImgUrl.split('/img/pack2/small_size/')
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
             getLatestOpenedImg = index + 1
@@ -94,7 +93,7 @@ if (gallery03Images) {
         image.onclick = () => {
             let getElementCSS = window.getComputedStyle(image)
             let getFullImgUrl = getElementCSS.getPropertyValue('background-image')
-            let getImgUrlPos = getFullImgUrl.split('/img/pack3/smallSize/')
+            let getImgUrlPos = getFullImgUrl.split('/img/pack3/small_size/')
             let setNewImgUrl = getImgUrlPos[1].replace('")', '')
             
             getLatestOpenedImg = index + 1
